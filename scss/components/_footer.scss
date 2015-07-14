@@ -1,0 +1,106 @@
+// ==========================================================================
+// Main Footer
+// ==========================================================================
+
+// Footer
+.footer {
+	background: $sky-blue;
+	font-family: 'lunchboxbold', sans-serif;
+	text-transform: uppercase;
+	padding: 30px 0 0 0;
+	@include bp(mama-bear) {
+		padding-top: 15px;
+	}
+}
+
+.footer-nav {
+	float: right;
+	> a {
+		float: right;
+		padding: 43px 0 20px 0;
+		margin-left: 30px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 20px;
+		font-family: 'lunchboxbold';
+		color: $white;
+		@include bp(mama-bear) {
+			margin-left: 15px;
+			font-size: 16px;
+		}
+	}
+	a:hover {
+		color: $slate-blue;
+	}
+}
+
+
+.footer-info {
+	background: #7CBED8;
+	padding: 15px 0;
+	margin-top: 60px;
+	@include bp(mama-bear) {
+		margin-top: 30px;
+	}
+	a {
+		color: $sky-blue;
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+.footer-info-social {
+	float: left;
+	padding-top: 7px;
+	@include bp(mama-bear) {
+		float: none;
+		text-align: center;
+	}
+	> a {
+		line-height: 1;
+		margin: 0;
+		padding:0 15px 0 0;
+		font-size: 34px;
+	}
+	a:last-child {
+		padding: 0;
+	}
+}
+
+.footer-info-cred {
+	float: right;
+	padding-top: 10px;
+	@include bp(mama-bear) {
+		float: none;
+		text-align: center;
+	}
+	> p {
+		margin: 0;
+		font-size: 14px;
+		color: $sky-blue;
+	}
+}
+
+
+
+
+.footer-logo {
+	float: left;
+	margin-left: 0;
+	padding: 0 0 0 0;
+	background: url('/img/logo.svg') no-repeat;
+	background-size:  220px px; 
+	background-position: left 9px;
+	height: 75px;
+	width: 220px;
+	@include bp(mama-bear) {
+		background-size: 170px 60px;
+		width: 170px;
+	}
+}
+
+
+
+
+

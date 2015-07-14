@@ -1,0 +1,22 @@
+// Mixins 
+
+
+// Media Queries
+
+
+@mixin bp($point) {
+
+	$bp-babybear	: "(max-width: 550px)";
+	$bp-mamabear	: "(max-width: 900px)";
+	$bp-papabear	: "(max-width: 1100px)"; 
+
+	@if $point == baby-bear {
+		@media #{$bp-babybear} { @content; }
+	}
+	@else if $point == mama-bear { 
+		@media #{$bp-mamabear} { @content; }
+	}
+	@else if $point == papa-bear { 
+		@media #{$bp-mamabear} { @content; }
+	}
+}

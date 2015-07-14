@@ -1,0 +1,314 @@
+// ==========================================================================
+// Main Sections
+// ==========================================================================
+
+
+// main content modules
+
+.module {
+	background: $cream;
+	padding: 32px;
+	margin-bottom: 35px;
+	border-radius: 7px;
+	box-shadow: 0 3px $grass;
+	border: 1px solid $grass;
+	@include bp(mama-bear) {
+		padding: 25px;
+	}
+	@include bp(baby-bear) {
+		padding: 16px;
+	}
+}
+
+.module-feature {
+	width: 100%;
+}
+
+.module-social {
+	text-align: center;
+}
+
+
+// ================================
+// Section for any page
+// ================================
+
+.section {
+	background: $lime;
+	padding: 60px 0;
+}
+
+.section-home {
+	padding: 30px 0 20px;
+	@include bp(baby-bear) {
+		padding-bottom: 0px;
+	}
+}
+
+.section-feature {
+	padding: 20px 0;
+}
+
+.section-sessions {
+	padding: 90px 0 20px;
+	@include bp(mama-bear) {
+		padding-top: 85px;
+	}
+	@include bp(baby-bear) {
+		padding-top: 50px;
+	}
+}
+
+
+
+///// Not Sure what to do with this //////
+///// Not Sure what to do with this //////
+///// Not Sure what to do with this //////
+///// Not Sure what to do with this //////
+
+// Video Player Image
+.video-image {
+	max-width: 100%;
+}
+
+
+
+// Share on Social Media Block
+
+.share {
+	text-align: center;
+	background: $grass;
+	padding: 32px 32px 25px 32px;
+	border-radius: 7px;
+	border: 1px solid lighten($grass, 7%);
+	@include bp(mama-bear) {
+		display: none;
+	}
+	> h4 {
+		color: $cream;
+	}
+}
+
+.share-icons {
+	text-align: center;
+	padding-top: 10px;
+	> li > a {
+		color: $lime;
+		font-size: 40px;
+		&:hover {
+			color: $cream;
+		}
+	}
+}
+
+
+
+
+// Buttons
+
+.btn {
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	background: $slate-blue;
+	border: 1px solid darken($slate-blue, 10%);
+	box-shadow: 0 3px darken($slate-blue, 10%);
+	padding: 7px 30px;
+	border-radius: 25px;
+	color: $cream;
+	font-family: 'lunchboxbold', sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+	max-width: 350px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	&:hover {
+		background: darken($slate-blue, 3%);
+		color: $cream;
+	}
+	&:active {
+		box-shadow: none;
+		top: 3px;
+	}
+}
+
+.btn-small {
+	max-width: 150px;
+	display: inline-block;
+}
+
+.btn.full-mobile {
+	@include bp(baby-bear) {
+		min-width: 90%;
+	}
+}
+
+// Page Intro Block - used on all pages except home
+
+.pg-intro {
+	background: $grass;
+	border-top: 2px solid lighten($grass, 7%);
+	border-bottom: 2px solid lighten($grass, 7%);
+	color: $white;
+	padding: 40px 0 50px;
+	text-align: center;
+	@include bp(mama-bear) {
+		padding: 30px 0;
+	}
+}
+
+.pg-intro_headline {
+	font-size: 80px;
+	font-family: 'lunchboxbold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 1;
+	padding-bottom: 30px;
+	@include bp(mama-bear) {
+		font-size: 55px;
+		letter-spacing: 1px;
+		padding-bottom: 10px;
+	}
+	@include bp(baby-bear) {
+		font-size: 45px;
+	}
+}
+
+// for session page headlines only 
+.pg-intro_headline.small {
+	span {
+		font-family: 'lunchboxlight', sans-serif;
+	}
+	font-size: 40px;
+	padding-bottom: 0;
+	letter-spacing: 0;
+	@include bp(baby-bear) {
+		font-size: 32px;
+	}
+}
+
+.pg-intro_body {
+	font-size: 24px;
+	color: $white;
+	max-width: 80%;
+	margin: 0 auto;
+	@include bp(mama-bear) {
+		font-size: 18px;
+		max-width: 95%;
+	}
+}
+
+
+// socialize:
+
+.social {
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.social-headline {
+	color: $slate-blue;
+	font-size: 35px;
+	font-family: 'lunchboxbold', sans-serif;
+	text-transform: uppercase;
+	@include bp(baby-bear) {
+		font-size: 28px;
+	}
+}
+
+.social-icons {
+	padding: 40px 0 0;
+	> li {
+		display: inline-block;
+		padding-bottom: 30px;
+	}
+	> li > a {
+		line-height: 1;
+		font-size: 90px;
+		padding: 30px 20px 0px 20px;
+		color: $slate-blue;
+		@include bp(baby-bear) {
+			font-size: 60px;
+			padding: 0 10px;
+		}
+	}
+	> li > a:hover {
+		color: $grass;
+	}
+}
+
+
+
+// Tiles
+
+.tile {
+	background: $cream;
+	color: $slate-blue;
+	border-radius: 7px;
+	box-shadow: 0 3px $grass;
+	border: 1px solid $grass;
+	padding: 15px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	@include bp(baby-bear) {
+		padding: 10px;
+	}
+	img {
+		max-width: 100%;
+		padding-bottom: 10px;
+	}
+	&:nth-child(2n + 1) {
+		clear: none;
+		@include bp(mama-bear) {
+			clear: left;
+		}
+	}
+	a, a:visited {
+		color: $slate-blue;
+	}
+	&:hover {
+		background: lighten($cream, 5%);
+	}
+}
+
+.tile_title {
+	font-family: 'lunchboxbold', sans-serif;
+	font-size: 18px;
+	display: block;
+	@include bp(baby-bear) {
+		letter-spacing: none;
+	}
+}
+
+.tile_subhead {
+	font-family: 'lunchboxlight', sans-serif;
+	display: block;
+}
+
+// clear every 4th li to prevent breaking tile grid
+
+.tile:nth-child(4n + 1) {
+	clear: left;
+}
+
+
+/// Experiment
+
+.tile-horizontal {
+	img {
+		float: left;
+	}
+	.tile-horizontal_title,
+	.tile-horizontal_subhead {
+		float: left;
+	}
+
+}
+
+
+
+
+
+
+

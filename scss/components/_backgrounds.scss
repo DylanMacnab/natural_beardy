@@ -1,0 +1,31 @@
+// Homepage Mountains Background
+
+
+.bg-header {
+	position: relative;
+	display: block;
+	top: 1px;
+	left: 50%;
+	margin-left: -1230px;
+	@include bp(mama-bear) {
+		width: 2000px;
+		margin-left: -985px;
+	}
+	@include bp(baby-bear) {
+		width: 1700px;
+		margin-left: -835px;
+	}
+}
+
+.bg-footer {
+	position: relative;
+	display: block;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	margin-left: -1250px;
+	@include bp(mama-bear) {
+		width: 2000px;
+		margin-left: -985px;
+	}
+}

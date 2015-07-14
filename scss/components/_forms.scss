@@ -1,0 +1,38 @@
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+
+// text input
+
+.input {
+	font-family: 'Open Sans', sans-serif;
+	background: $lime;
+	border: 1px solid lighten($grass, 7%);
+	padding: 10px 30px;
+	border-radius: 25px;
+	text-align: center;
+	color: $cream;
+	font-size: 18px;
+	&::-webkit-input-placeholder {
+   		color: $cream;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+  	 	color: $cream;  
+	}
+
+	&::-moz-placeholder {  /* Firefox 19+ */
+   		color: $cream;  
+	}
+
+	&:-ms-input-placeholder {  
+   		color: $cream;  
+   	}
+   	&:active, &:focus {
+   		outline: $cream;
+   	}
+   	@include bp(baby-bear) {
+   		width: 100%;
+   	}
+}

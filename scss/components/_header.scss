@@ -1,0 +1,93 @@
+// ==========================================================================
+// Header Block
+// ==========================================================================
+
+
+.header {
+	padding-top: 15px;
+}
+
+// Logo
+
+.header-logo {
+	float: left;
+	margin-left: 0;
+	padding: 0 0 0 0;
+	background: url('/img/logo.svg') no-repeat;
+	background-size: 220px 65px; 
+	background-position: left 9px;
+	height: 75px;
+	width: 220px;
+	@include bp(mama-bear) {
+		background-size: 170px 60px;
+		width: 170px;
+	}
+}
+
+// Navigation
+
+.header-nav {
+	float: right;
+	> a {
+		float: right;
+		padding: 43px 0 20px 0;
+		margin-left: 30px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 20px;
+		font-family: 'lunchboxbold';
+		color: $white;
+		@include bp(mama-bear) {
+			margin-left: 15px;
+			font-size: 16px;
+		}
+	}
+	a:hover {
+		color: $slate-blue;
+	}
+}
+
+// Nav icons  (also used in the Footer)
+.sessions {
+	background-image: url('/img/nav-sessions.svg');
+	background-repeat: no-repeat;
+	background-size: 30px 42px;
+	background-position: center 3px;
+	@include bp(mama-bear) {
+		background-size: 23px 32px;
+		background-position: center 10px;
+	}
+}
+.about {
+	background-image: url('/img/nav-about.svg');
+	background-repeat: no-repeat;
+	background-size: 22px 33px;
+	background-position: center 12px;
+	@include bp(mama-bear) {
+		background-size: 18px 26px;
+		background-position: center 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

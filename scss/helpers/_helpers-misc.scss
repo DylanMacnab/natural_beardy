@@ -1,0 +1,24 @@
+// ==========================================================================
+// Helpers Misc
+// ==========================================================================
+
+
+// Image Replacement
+
+.ir {
+	border: 0;
+  	font: 0/0 a;
+  	text-shadow: none;
+  	color: transparent;
+}
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

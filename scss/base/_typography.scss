@@ -1,0 +1,71 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+
+// Fonts
+@font-face {
+  font-family: 'lunchboxlight';
+  src: url("../fonts/lunchbox_light-webfont.eot");
+  src: url("../fonts/lunchbox_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lunchbox_light-webfont.woff") format("woff"), url("../fonts/lunchbox_light-webfont.ttf") format("truetype"), url("../fonts/lunchbox_light-webfont.svg#lunchboxlight") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'lunchboxbold';
+  src: url("../fonts/lunchbox_bold-webfont.eot");
+  src: url("../fonts/lunchbox_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lunchbox_bold-webfont.woff") format("woff"), url("../fonts/lunchbox_bold-webfont.ttf") format("truetype"), url("../fonts/lunchbox_bold-webfont.svg#lunchboxbold") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v11/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+p {
+	font-size: 18px;
+	color: $slate-blue;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+  @include bp(baby-bear) {
+    font-size: 16px;
+  }
+}
+
+a:hover {
+  transition: .3s;
+  color: $slate-blue;
+}
+
+
+
+
+
+// good idea?
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  transition: .3s;
+}
+
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: 'lunchboxbold', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $slate-blue;
+  span {
+    font-family: 'lunchboxlight', sans-serif;
+  }
+  @include bp(mama-bear) {
+    font-size: 24px;
+  }
+}
